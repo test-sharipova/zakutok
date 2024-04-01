@@ -1,0 +1,80 @@
+footer {
+    background-color: $accent;
+    color: #fff;
+    padding: 96px 0 153px;
+}
+.footer {
+    &__divider {
+        background-color: #fff;
+        height: 1px;
+        width: 100%;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 146px;
+        margin-bottom: 100px;
+        .logo {
+            color: #fff;
+            width: fit-content;
+            display: block;
+            span {
+                width: 100%;
+            }
+        }
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 160%;
+        max-width: 253px;
+        margin-top: 40px;
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+    &__link {
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        line-height: 160%;
+        margin-bottom: 16px;
+        span {
+            &:nth-child(1) {
+                width: 20px;
+                height: 20px;
+                mask-repeat: no-repeat;
+                mask-position: center;
+                mask-size: contain;
+                background-color: #fff;
+            }
+           
+        }
+        &-whatsapp {
+            span {
+                &:nth-child(1) {
+                    mask-image: url(../img/whatsapp.svg);
+                }
+            }
+        }
+        &-tg {
+            span {
+                &:nth-child(1) {
+                    mask-image: url(../img/telegram.svg);
+                }
+            }
+        }
+        &-email {
+            span {
+                &:nth-child(1) {
+                    mask-image: url(../img/email.svg);
+                }
+            }
+        }
+    }
+
+}

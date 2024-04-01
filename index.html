@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Фермерские продукты</title>
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="#" class="logo" aria-current="page">
+                    <span>Фермерский</span>
+                    <span>закуток</span>
+                </a>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item-logo">
+                            <a href="#" class="logo" aria-current="page">
+                                <span>Фермерский</span>
+                                <span>закуток</span>
+                            </a>
+                        </li>
+                        <li class="menu__item"><a href="#catalog" class="menu__link">Каталог</a></li>
+                        <li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
+                        <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+                        <li class="menu__item menu__item-mobile">
+                            <a href="tel:+7" class="header__phone">+7 (000) 000 00 00</a>
+                            <a href="#" class="btn_main">Написать в WhatsApp</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span><span></span><span></span>
+                    </div>
+                </nav>
+                <a href="tel:+7" class="header__phone">+7 (000) 000 00 00</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="promo">
+            <div class="container">
+               <div class="promo__wrapper">
+                    <div class="promo__content">
+                        <h1 class="promo__title">
+                            Фермерские продукты с доставкой на дом
+                        </h1>
+                        <div class="promo__btns">
+                            <a href="#catalog" class="btn_main">Перейти в каталог</a>
+                            <a href="#delivery" class="btn_transparent">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="promo__products">
+                        <div class="product__card">
+                            <div class="product__card__label">Популярное</div>
+                            <div class="product__card__img product__card__img-milk">
+                                <img src="img/product-1.png" alt="Молоко">
+                            </div>
+                            <p class="product__card__name">Молоко  1л</p>
+                            <p class="product__card__subtitle">Жирность 2,7%</p>
+                            <div class="product__card__wrap">
+                                <p class="product__card__price">70 руб.</p>
+                                <button type="button" class="btn_mini">Заказать</button>
+                                <p class="product__incart">В корзине</p>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <div class="product__card__label">Популярное</div>
+                            <div class="product__card__img product__card__img-egg">
+                                <img src="img/product-2.png" alt="Яйца">
+                            </div>
+                            <p class="product__card__name">Яйцо деревенское</p>
+                            <p class="product__card__subtitle">15 шт</p>
+                            <div class="product__card__wrap">
+                                <p class="product__card__price">200 руб.</p>
+                                <button type="button" class="btn_mini">Заказать</button>
+                                <p class="product__incart">В корзине</p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </section>
+        <section class="product" id="catalog">
+            <div class="container">
+                <div class="product__title__wrap">
+                    <h2 class="title">Каталог</h2>
+                    <div class="open"></div>
+                </div>
+                <div class="product__wrapper">
+                    <div class="product__card">
+                        
+                        <div class="product__card__img product__card__img">
+                            <img src="img/product-3.png" alt="">
+                        </div>
+                        <p class="product__card__name">Пирожки</p>
+                        <p class="product__card__subtitle">9 шт. в пакете</p>
+                        <input type="text" value="Пирожки, 9 шт. в пакете" readonly class="product__value" name="order">
+                        <div class="product__card__wrap">
+                            <p class="product__card__price">180 руб.</p>
+                            <button type="button" class="btn_mini">Заказать</button>
+                            <p class="product__incart">В корзине</p>
+                        </div>
+                    </div>
+                    <div class="product__card">
+                        <div class="product__card__label">Популярное</div>
+                        <div class="product__card__img product__card__img">
+                            <img src="img/product-1.png" alt="">
+                        </div>
+                        <p class="product__card__name">Молоко  1л</p>
+                        <p class="product__card__subtitle">Жирность 2,7%</p>
+                        <div class="product__card__wrap">
+                            <p class="product__card__price">70 руб.</p>
+                            <button type="button" class="btn_mini">Заказать</button>
+                            <p class="product__incart">В корзине</p>
+                        </div>
+                    </div>
+                    <div class="product__card">
+                        <div class="product__card__label">Популярное</div>
+                        <div class="product__card__img product__card__img">
+                            <img src="img/product-2.png" alt="">
+                        </div>
+                        <p class="product__card__name">Яйцо деревенское</p>
+                        <p class="product__card__subtitle">15 шт</p>
+                        <div class="product__card__wrap">
+                            <p class="product__card__price">200 руб.</p>
+                            <button type="button" class="btn_mini">Заказать</button>
+                            <p class="product__incart">В корзине</p>
+                        </div>
+                    </div>
+                    <div class="product__card">
+                       
+                        <div class="product__card__img product__card__img">
+                            <img src="img/product-1.png" alt="">
+                        </div>
+                        <p class="product__card__name">Молоко  1,5л</p>
+                        <p class="product__card__subtitle">Жирность до 6%</p>
+                        <div class="product__card__wrap">
+                            <p class="product__card__price">130 руб.</p>
+                            <button type="button" class="btn_mini">Заказать</button>
+                            <p class="product__incart">В корзине</p>
+                        </div>
+                    </div>
+                    <div class="product__card">
+                        
+                        <div class="product__card__img product__card__img">
+                            <img src="img/product-4.png" alt="">
+                        </div>
+                        <p class="product__card__name">Масло сливочное</p>
+                        <p class="product__card__subtitle">82,5%</p>
+                        <div class="product__card__wrap">
+                            <p class="product__card__price">680 руб.</p>
+                            <button type="button" class="btn_mini">Заказать</button>
+                            <p class="product__incart">В корзине</p>
+                        </div>
+                    </div>
+                    <div class="product__card">
+                        
+                        <div class="product__card__img product__card__img">
+                            <img src="img/product-5.png" alt="">
+                        </div>
+                        <p class="product__card__name">Творог, 1 кг</p>
+                        <p class="product__card__subtitle">Жирность 5%</p>
+                        <div class="product__card__wrap">
+                            <p class="product__card__price">110 руб.</p>
+                            <button type="button" class="btn_mini">Заказать</button>
+                            <p class="product__incart">В корзине</p>
+                        </div>
+                    </div>
+                    <div class="product__card">
+                        
+                        <div class="product__card__img product__card__img">
+                            <img src="img/product-6.png" alt="">
+                        </div>
+                        <p class="product__card__name">Пельмени, 1кг</p>
+                        <p class="product__card__subtitle">Классические</p>
+                        <div class="product__card__wrap">
+                            <p class="product__card__price">450 руб.</p>
+                            <button type="button" class="btn_mini">Заказать</button>
+                            <p class="product__incart">В корзине</p>
+                        </div>
+                    </div>
+                    <div class="product__card">
+                        
+                        <div class="product__card__img product__card__img">
+                            <img src="img/product-7.png" alt="">
+                        </div>
+                        <p class="product__card__name">Куры домашние</p>
+                        <p class="product__card__subtitle">Вес (1,7 - 2,3 кг)</p>
+                        <div class="product__card__wrap">
+                            <p class="product__card__price">290 руб.</p>
+                            <button type="button" class="btn_mini">Заказать</button>
+                            <p class="product__incart">В корзине</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper_center">
+                    <a href="#" class="btn_main">Написать в WhatsApp</a>
+                    <button type="button" class="btn_transparent btn_transparent-cart open">Перейти в корзину</button>
+                </div>
+            </div>
+        </section>
+        <section class="process" id="delivery">
+            <div class="container">
+                <div class="process__wrapper">
+                    <h2 class="title">Как сделать заказ</h2>
+                    <div class="process__items">
+                        <div class="process__item">
+                            <div class="process__num">1</div>
+                            <div class="process__text">Выбрать продукт</div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__num">2</div>
+                            <div class="process__text">Заполнить форму заказа</div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__num">3</div>
+                            <div class="process__text">Дождаться нашего 
+                                звонка или ответа в WhatsApp</div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__num">4</div>
+                            <div class="process__text">Курьер доставит 
+                                продукты на указанный 
+                                адрес</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <div class="about__content">
+                        <h2 class="title">
+                            Почему выбирают нас?
+                        </h2>
+                        <div class="about__img mobile">
+                            <img src="img/about-img.png" alt="Продукты фермерские">
+                        </div>
+                        <p class="about__text">
+                            Наш “Фермерский закуток” предлагает только качественные натуральные продукты, выращенные на фермах без использования химических удобрений и пестицидов. 
+                            Вы просто нажимаете кнопку, а мы доставляем свежие продукты прямо к подъезду в удобное для вас время. Мы гарантируем свежесть и вкус каждого продукта, который вы заказываете у нас.
+                            Мы ценим каждого нашего клиента и стремимся сделать покупки у нас максимально комфортными и приятными.
+                        </p>
+                        <a href="#" class="btn_main">Связаться с магазином</a>
+                    </div>
+                    <div class="about__img desktop">
+                        <img src="img/about-img.png" alt="Продукты фермерские">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11276.972387239966!2d38.985746115759405!3d45.04028853711942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1709710860015!5m2!1sru!2sru" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map__block">
+                <div class="map__img">
+                    <img src="img/map-img.png" alt="адрес">
+                </div>
+                <div class="map__text">
+                    г. Краснодар, ул. Краснодарская, 25/2
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer id="contacts">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__item">
+                    <a href="#" class="logo" aria-current="page">
+                        <span>Фермерский</span>
+                        <span>закуток</span>
+                    </a>
+                    <p class="footer__text">
+                        Доставка деревенских продуктов от лучших фермеров Краснодарского края
+                    </p>
+                </div>
+                <div class="footer__item">
+                    <p class="footer__title">Контакты:</p>
+                    <a href="#" class="footer__link footer__link-whatsapp">
+                        <span></span>
+                        <span>+7 (000) 000 00 00</span>
+                    </a>
+                    <a href="#" class="footer__link footer__link-tg">
+                        <span></span>
+                        <span>telegram</span>
+                    </a>
+                    <a href="#" class="footer__link footer__link-email">
+                        <span></span>
+                        <span>e-mail</span>
+                    </a>
+                </div>
+                <div class="footer__item">
+                    <p class="footer__title">Меню</p>
+                    <a href="#about" class="footer__link">О компании</a>
+                    <a href="#catalog" class="footer__link">Каталог</a>
+                    <a href="#delivery" class="footer__link">Как сделать заказ</a>
+                </div>
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__text"> &copy; Фермерский закуток 2024</div>
+        </div>
+    </footer>
+
+    <div class="overlay"></div>
+    <div class="product__cart">
+        <button class="product__closeBtn"></button>
+        <h2>В нашей корзине:</h2>
+        <form action="#" class="product__cart__form">
+            <fieldset class="product__field">
+
+            </fieldset>
+            <fieldset class="product__date">
+                <p class="subtitle">Ваши контакты:</p>
+                <div class="input__wrap">
+                    <input type="text" name="name" id="name" placeholder="">
+                    <label for="name">Имя</label>
+                </div>
+                <div class="input__wrap">
+                    <input type="text" name="phone" id="phone" placeholder="" class="phone" required>
+                    <label for="phone">Телефон</label>
+                </div>
+                <div class="input__wrap">
+                    <input type="text" name="adress" id="adress" placeholder="" required>
+                    <label for="adress">Адрес доставки</label>
+                </div>
+                
+                <textarea name="message" placeholder="Сообщение. Укажите количество"></textarea>
+            </fieldset>
+            <button type="submit" class="btn_main">Отправить заявку</button>
+        </form>
+    </div>
+</body>
+</html>

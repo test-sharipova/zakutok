@@ -1,0 +1,25 @@
+.about {
+    padding: 70px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        .title {
+            margin-bottom: 36px;
+        }
+    }
+    &__content {
+        max-width: 50%;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 160%;
+        margin-bottom: 24px;
+    }
+    &__img {
+        max-width: 45%;
+        img {
+            max-width: 100%;
+        }
+    }
+}
