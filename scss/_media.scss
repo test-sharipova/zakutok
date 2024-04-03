@@ -125,6 +125,7 @@
             transform: translate(0, 0);
             width: 100%;
             height: 100vh;
+            max-height: 100vh;
             overflow-y: auto;
             overflow-x: hidden;
             border-radius: 0;
@@ -141,6 +142,10 @@
         }
        &__date {
             grid-template-columns: 1fr;
+       }
+       &__incart {
+            height: 40px;
+            min-width: 130px;
        }
     }
     .process {
@@ -165,6 +170,7 @@
             order: 1;
             margin-bottom: 16px;
         }
+        
     }
     .map {
         &__block {
@@ -196,7 +202,7 @@
 }
 @media screen and (max-width:525px) {
     .promo {
-        height: 44vh;
+        height: 56vh;
         background: url(../img/promo-img-mob.png) no-repeat right 10%/65%;
     }
     .product {

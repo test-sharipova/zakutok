@@ -1,0 +1,27 @@
+@keyframes title {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+@keyframes promoCard {
+    from {
+        opacity: 0;
+        scale: (0);
+    }
+    to {
+        opacity: 1;
+        scale: (1);
+    }
+
+    
+}
+.promo {
+   
+    .product__card {
+        animation: promoCard 1s linear both;
+
+    }
+}
