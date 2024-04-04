@@ -33,19 +33,20 @@ window.addEventListener('DOMContentLoaded', () => {
             let item = products[i].cloneNode(true),   //клонировать карточку продукта в переменную item
                 btn = item.querySelector('button'),   //найти там кнопку
                 btnOrder = products[i].querySelector('button'),   //найти кнопку в карточке, которая на странице
-                btnIncart = products[i].querySelector('.product__incart'),   //найти в карточке кнопку, которая показывает, что товар в корзине
-                count = document.createElement('input');  //создаем кнопку удаления товара
-            //     count.classList.add('product__count');   //добавить класс к кнопке удаления товара
-            //     count.setAttribute('value', '1');
-            //     count.setAttribute('type', 'number');
-            //     count.setAttribute('inputmode', 'numeric');
-
-            // item.appendChild(count);   //добавить кнопку удаления товара к товару в корзине
+                btnIncart = products[i].querySelector('.product__incart');   //найти в карточке кнопку, которая показывает, что товар в корзине
+               
                 
             btn.remove();
             field.appendChild(item);
             btnOrder.remove();
             btnIncart.style.display = 'flex';
+
+            //animation
+            let prodImg = products[i].querySelector('.product__card__img').cloneNode(true);
+            prodImg.classList.add('product__card__img_animated');
+            products[i].appendChild(prodImg);
+
+           
         });
     });
 
@@ -99,6 +100,14 @@ window.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', openCart);
     });
 
+    //маска для телефона
+    let element = document.querySelectorAll('.phone');
+    let maskOptions = {
+        mask: '+7(000)000-00-00'
+    };
+    for (let i = 0; i < element.length; i++) {
+        let mask = IMask(element[i], maskOptions);
+    }
 
    //яндекс карты
    ymaps.ready(function () {

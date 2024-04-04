@@ -66,6 +66,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            
         }
         &__price {
             font-size: 18px;
@@ -84,7 +85,12 @@
                 object-fit: contain;
                 margin-left: auto;
             }
-           
+           &_animated {
+                position: absolute;
+                top: 16px;
+                left: 15px;
+                animation: prodImg 1s linear both;
+           }
         }
     }
     &__wrapper {
@@ -93,6 +99,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 56px;
+        position: relative;
     }
     
 

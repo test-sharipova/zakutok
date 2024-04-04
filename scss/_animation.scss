@@ -21,7 +21,23 @@
 .promo {
    
     .product__card {
-        animation: promoCard 1s linear both;
+        animation: promoCard 1s linear;
 
+    }
+}
+@keyframes prodImg {
+    0% {
+        scale: (1);
+       
+        
+    }
+    20% {
+        scale: (1.1);
+        
+    }
+    100% {
+        scale: (0);
+        transform: translateX(100%);
+       
     }
 }
