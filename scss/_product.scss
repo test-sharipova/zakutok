@@ -288,4 +288,18 @@
             }
         }
     }
+    &__comingsoon {
+        text-align: center;
+        font-size: 24px;
+        line-height: 120%;
+        background-color: #ede1d2;
+        // border: 1px solid #412f26;
+        padding: 24px;
+        width: fit-content;
+        margin: 20px auto 0;
+        box-shadow: 2px 2px 5px rgba(65,47,38,.35);
+        .header__phone {
+            font-size: 24px;
+        }
+    }
 }
