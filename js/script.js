@@ -112,7 +112,7 @@ window.addEventListener('DOMContentLoaded', () => {
    //яндекс карты
    ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
-            center: [45.036811, 38.996491],
+            center: [45.059160, 39.167606],
             zoom: 15
         }, {
             searchControlProvider: 'yandex#search'
