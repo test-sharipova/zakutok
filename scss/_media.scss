@@ -147,6 +147,15 @@
             height: 40px;
             min-width: 130px;
        }
+       &__comingsoon {
+        .header__phone {
+            display: block;
+            margin-top: 16px;
+        }
+        br {
+            display: none;
+        }
+       }
     }
     .process {
         &__wrapper {
